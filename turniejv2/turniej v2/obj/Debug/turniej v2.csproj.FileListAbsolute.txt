@@ -1,0 +1,15 @@
+E:\programowanie\turniej\v2\turniej v2\turniej v2\obj\Debug\turniej v2.csprojAssemblyReference.cache
+E:\programowanie\turniej\v2\turniej v2\turniej v2\obj\Debug\MainWindow.g.cs
+E:\programowanie\turniej\v2\turniej v2\turniej v2\obj\Debug\App.g.cs
+E:\programowanie\turniej\v2\turniej v2\turniej v2\obj\Debug\turniej v2_MarkupCompile.cache
+E:\programowanie\turniej\v2\turniej v2\turniej v2\obj\Debug\turniej v2_MarkupCompile.lref
+E:\programowanie\turniej\v2\turniej v2\turniej v2\bin\Debug\turniej v2.exe.config
+E:\programowanie\turniej\v2\turniej v2\turniej v2\bin\Debug\turniej v2.exe
+E:\programowanie\turniej\v2\turniej v2\turniej v2\bin\Debug\turniej v2.pdb
+E:\programowanie\turniej\v2\turniej v2\turniej v2\obj\Debug\MainWindow.baml
+E:\programowanie\turniej\v2\turniej v2\turniej v2\obj\Debug\turniej v2.g.resources
+E:\programowanie\turniej\v2\turniej v2\turniej v2\obj\Debug\turniej_v2.Properties.Resources.resources
+E:\programowanie\turniej\v2\turniej v2\turniej v2\obj\Debug\turniej v2.csproj.GenerateResource.cache
+E:\programowanie\turniej\v2\turniej v2\turniej v2\obj\Debug\turniej v2.csproj.CoreCompileInputs.cache
+E:\programowanie\turniej\v2\turniej v2\turniej v2\obj\Debug\turniej v2.exe
+E:\programowanie\turniej\v2\turniej v2\turniej v2\obj\Debug\turniej v2.pdb

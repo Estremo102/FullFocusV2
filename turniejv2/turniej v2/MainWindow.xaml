@@ -1,0 +1,60 @@
+﻿<Window x:Class="turniej_v2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:turniej_v2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1080" Width="1920" WindowState="Maximized" WindowStyle="None" Cursor="normal.cur">
+    <Grid>
+        <Image x:Name="background" Source="LOL_CMS_309_Tile_01-Feature_H00-V50-min_1l8rc5dxueggbt78ktgw-1200x630.png" Stretch="Fill"/>
+        <Grid x:Name="player1" Margin="80,80,0,80" Background="#675831" HorizontalAlignment="Left" Width="680">
+            <Rectangle Height="100" Margin="10,10,10,0" VerticalAlignment="Top" Fill="#000000"/>
+            <Rectangle Height="100" Margin="10,0,10,10" VerticalAlignment="Bottom" Fill="#000000"/>
+            <Image x:Name="img1p" Margin="10,115,10,120" Source="default.jpg" Stretch="Fill"/>
+            <Button x:Name="p1r" Content="" Margin="25,0,450,25" Background ="#DD3030" Click="P1r_Click" Height="70" VerticalAlignment="Bottom"/>
+            <Button x:Name="p1g" Content="" Margin="236,0,236,25" Background ="#30DD30" Click="P1g_Click" Height="70" VerticalAlignment="Bottom"/>
+            <Button x:Name="p1b" Content="" Margin="450,0,25,25" Background ="#3030DD" Click="P1b_Click" Height="70" VerticalAlignment="Bottom"/>
+            <Label x:Name="p1points" Content="0" HorizontalAlignment="Left" Margin="22,19,0,0" VerticalAlignment="Top" Height="81" Width="636" FontWeight="Bold" Foreground="White" FontSize="48"/>
+            <Button x:Name="img1set" Content="" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top" Width="660" Height="677" Click="Img1set_Click" Background="#00DDDDDD" BorderBrush="#00707070" Opacity="0"/>
+            <Button x:Name="g1btn" Margin="10,0,0,120" HorizontalAlignment="Left" Width="215" Height="89" VerticalAlignment="Bottom" Background="#30DD30" Click="G1btn_Click"/>
+            <Button x:Name="b1btn" Margin="0,0,10,120" Height="89" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="215" Background="#DD3030" Click="B1btn_Click"/>
+            <Border x:Name="p1select" BorderBrush="#FF3030DD" Margin="10,115,10,120" BorderThickness="15" Visibility="Hidden"/>
+        </Grid>
+        <Grid x:Name="player2" Margin="1152,80,0,80" Background="#675831" HorizontalAlignment="Left" Width="680">
+            <Rectangle Height="100" Margin="10,10,10,0" VerticalAlignment="Top" Fill="#000000"/>
+            <Rectangle Height="100" Margin="10,0,10,10" VerticalAlignment="Bottom" Fill="#000000"/>
+            <Image x:Name="img2p" Margin="10,115,10,120" Source="default.jpg" Stretch="Fill"/>
+            <Button x:Name="p2r" Content="" Margin="25,0,450,25" Background ="#DD3030" Click="P2r_Click" Height="70" VerticalAlignment="Bottom"/>
+            <Button x:Name="p2g" Content="" Margin="236,0,236,25" Background ="#30DD30" Click="P2g_Click" Height="70" VerticalAlignment="Bottom"/>
+            <Button x:Name="p2b" Content="" Margin="450,0,25,25" Background ="#3030DD" Click="P2b_Click" Height="70" VerticalAlignment="Bottom"/>
+            <Label x:Name="p2points" Content="0" HorizontalAlignment="Left" Margin="22,19,0,0" VerticalAlignment="Top" Height="81" Width="636" FontWeight="Bold" Foreground="White" FontSize="48"/>
+            <Button x:Name="img2set" Content="" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top" Width="660" Height="677" Click="Img2set_Click" Background="#00DDDDDD" BorderBrush="#00707070" Opacity="0"/>
+            <Button x:Name="g2btn" Margin="10,0,0,120" HorizontalAlignment="Left" Width="215" Height="89" VerticalAlignment="Bottom" Background="#30DD30" Click="G2btn_Click"/>
+            <Button x:Name="b2btn" Margin="0,0,10,120" Height="89" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="215" Background="#DD3030" Click="B2btn_Click"/>
+            <Border x:Name="p2select" BorderBrush="#FF3030DD" Margin="10,115,10,120" BorderThickness="15" Visibility="Hidden"/>
+        </Grid>
+        <Grid Margin="765,170,0,0" Height="902" VerticalAlignment="Top" HorizontalAlignment="Left" Width="382">
+            <Rectangle Fill="#675831" HorizontalAlignment="Left" Height="226" Margin="0,0,0,7" VerticalAlignment="Bottom" Width="382"/>
+            <Rectangle Margin="10,0,10,81" Fill="Black" Height="141" VerticalAlignment="Bottom"/>
+            <Label x:Name="kategorie" Content="category" Margin="20,0,20,105" Foreground="White" FontWeight="Bold" FontSize="48" Height="76" VerticalAlignment="Bottom"/>
+            <Ellipse Fill="Black" Margin="105,0,105,271" Height="173" VerticalAlignment="Bottom"/>
+            <Label x:Name="time" Content="time" Margin="105,488,105,271" Foreground="White" FontWeight="Bold" FontSize="72" Width="172" HorizontalContentAlignment="Center"/>
+            <Button x:Name="timeButton" Margin="105,0,105,271" Height="173" VerticalAlignment="Bottom" Opacity="0" Click="TimeButton_Click" MouseRightButtonDown="TimeButton_RClick"/>
+            <Rectangle Fill="Black" Margin="10,0,10,17" Height="59" VerticalAlignment="Bottom"/>
+            <Label x:Name="questionPoints" Content="200" Margin="20,0,20,30" Foreground="White" FontWeight="Bold" FontSize="24" Height="37" VerticalAlignment="Bottom"/>
+            <Button x:Name="losuj" Margin="10,0,10,81" Background="#00000000" Height="141" VerticalAlignment="Bottom" Click="Losuj_Click" MouseRightButtonDown="Set_Category" BorderBrush="#00707070" Opacity="0"/>
+            <Button x:Name="setPointsButton" Margin="10,0,10,17" Height="59" VerticalAlignment="Bottom" Opacity="0" MouseRightButtonDown="Set_Points"/>
+            <TextBox x:Name="whoFirst" Height="49" Margin="165,371,165,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" Background="#40FFFFFF" TextChanged="WhoFirst_TextChanged" Width="50" CharacterCasing="Lower" RenderTransformOrigin="0.5,0.5" Opacity="0"/>
+        </Grid>
+        <Grid x:Name="commandGrid" Visibility="Hidden">
+            <Rectangle Fill="Black" HorizontalAlignment="Left" Height="1072" VerticalAlignment="Top" Width="1912" Opacity="0.1"/>
+            <Grid Margin="200,200,200,300" Background="#675831">
+                <Rectangle Margin="15" Fill="#000000"/>
+                <TextBox x:Name="commandBox" Margin="45,0,45,129" FontSize="36" FontWeight="Bold" Height="58" VerticalAlignment="Bottom" KeyDown="Submit"/>
+                <Button x:Name="sumbit" Margin="1279,0,45,45" Content="Submit" FontSize="36" FontWeight="Bold" Click="Sumbit_Click" Height="62" VerticalAlignment="Bottom"/>
+                <Label Margin="45,0,45,215" Height="314" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="24" Foreground="White" Content="p1/p2 (filename/random/randomcat)&#xA;set category c1,c2,c3,c4&#xA;set points p1/p2/q [int]&#xD;&#xA;set background/localbackground&#xD;&#xA;set time seconds"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
